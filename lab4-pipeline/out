@@ -1,0 +1,98 @@
+echo \`define INPUT_FILE \"/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/test_data/test_br.ctrace\" > .set_testcase.v
+echo \`define OUTPUT_FILE \"/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/test_data/test_br.output\" >> .set_testcase.v
+echo \`define ORIG_INPUT_FILE \"/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/test_data/test_br.trace\" >> .set_testcase.v
+echo \`define MEMORY_IMAGE_FILE \"/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/test_data/test_br.hex\" >> .set_testcase.v
+echo \`define TEST_CASE \"test_br\" >> .set_testcase.v
+echo \`define VCD_FILE \"test_br.vcd\" >> .set_testcase.v
+rm -rf xsim.dir/
+echo -n verilog mylib .set_testcase.v lc4_alu.v lc4_cla.v lc4_decoder.v lc4_divider.v lc4_regfile.v lc4_pipeline.v include/register.v include/lc4_memory.v include/clock_util.v include/delay_eight_cycles.v include/bram.v testbench_lc4_processor.v > .prj
+xelab -cc gcc --debug off --prj .prj --snapshot snapshot.sim --lib mylib mylib.test_processor
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /home1/c/cis371/software/Vivado/2017.4/bin/unwrapped/lnx64.o/xelab -cc gcc --debug off --prj .prj --snapshot snapshot.sim --lib mylib mylib.test_processor 
+Multi-threading is on. Using 6 slave threads.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/.set_testcase.v" into library mylib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/lc4_alu.v" into library mylib
+INFO: [VRFC 10-311] analyzing module cla_input_rs
+INFO: [VRFC 10-311] analyzing module cla_input_rt
+INFO: [VRFC 10-311] analyzing module cla_input_ci
+INFO: [VRFC 10-311] analyzing module comparators
+INFO: [VRFC 10-311] analyzing module lc4_alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/lc4_cla.v" into library mylib
+INFO: [VRFC 10-311] analyzing module gp1
+INFO: [VRFC 10-311] analyzing module gp4
+INFO: [VRFC 10-311] analyzing module cla16
+INFO: [VRFC 10-311] analyzing module gpn
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/lc4_decoder.v" into library mylib
+INFO: [VRFC 10-311] analyzing module lc4_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/lc4_divider.v" into library mylib
+INFO: [VRFC 10-311] analyzing module lc4_divider
+INFO: [VRFC 10-311] analyzing module lc4_divider_one_iter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/lc4_regfile.v" into library mylib
+INFO: [VRFC 10-311] analyzing module lc4_regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/lc4_pipeline.v" into library mylib
+INFO: [VRFC 10-311] analyzing module lc4_processor
+WARNING: [VRFC 10-756] identifier is_load_X is used before its declaration [/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/lc4_pipeline.v:61]
+WARNING: [VRFC 10-756] identifier r2sel_D_pre is used before its declaration [/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/lc4_pipeline.v:62]
+WARNING: [VRFC 10-756] identifier is_load_X is used before its declaration [/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/lc4_pipeline.v:63]
+WARNING: [VRFC 10-756] identifier is_control_insn_X is used before its declaration [/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/lc4_pipeline.v:64]
+WARNING: [VRFC 10-756] identifier wsel_W is used before its declaration [/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/lc4_pipeline.v:99]
+WARNING: [VRFC 10-756] identifier wsel_W is used before its declaration [/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/lc4_pipeline.v:100]
+WARNING: [VRFC 10-756] identifier wsel_W is used before its declaration [/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/lc4_pipeline.v:161]
+WARNING: [VRFC 10-756] identifier wsel_W is used before its declaration [/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/lc4_pipeline.v:162]
+WARNING: [VRFC 10-756] identifier wsel_M is used before its declaration [/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/lc4_pipeline.v:164]
+WARNING: [VRFC 10-756] identifier wsel_M is used before its declaration [/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/lc4_pipeline.v:165]
+WARNING: [VRFC 10-756] identifier regfile_we_W is used before its declaration [/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/lc4_pipeline.v:218]
+WARNING: [VRFC 10-756] identifier nzp_old_bits is used before its declaration [/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/lc4_pipeline.v:294]
+WARNING: [VRFC 10-756] identifier nzp_old_bits is used before its declaration [/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/lc4_pipeline.v:295]
+WARNING: [VRFC 10-756] identifier nzp_old_bits is used before its declaration [/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/lc4_pipeline.v:296]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/include/register.v" into library mylib
+INFO: [VRFC 10-311] analyzing module Nbit_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/include/lc4_memory.v" into library mylib
+INFO: [VRFC 10-311] analyzing module lc4_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/include/clock_util.v" into library mylib
+INFO: [VRFC 10-311] analyzing module count
+INFO: [VRFC 10-311] analyzing module lc4_we_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/include/delay_eight_cycles.v" into library mylib
+INFO: [VRFC 10-311] analyzing module delay_eight_cycles
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/include/bram.v" into library mylib
+INFO: [VRFC 10-311] analyzing module bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/testbench_lc4_processor.v" into library mylib
+INFO: [VRFC 10-311] analyzing module test_processor
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 17 differs from formal bit length 16 for port out [/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/lc4_regfile.v:34]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port b [/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/lc4_pipeline.v:103]
+WARNING: [VRFC 10-1770] port i2out remains unconnected for this instance [/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/testbench_lc4_processor.v:81]
+WARNING: [VRFC 10-1770] port led_data remains unconnected for this instance [/mnt/castor/seas_home/j/jgkogan/cis571/lab4-pipeline/testbench_lc4_processor.v:100]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module mylib.count
+Compiling module mylib.lc4_we_gen
+Compiling module mylib.Nbit_reg(n=16,r=16'b0)
+Compiling module mylib.bram
+Compiling module mylib.Nbit_reg(n=16)
+Compiling module mylib.delay_eight_cycles(n=16)
+Compiling module mylib.lc4_memory
+Compiling module mylib.Nbit_reg(n=16,r=16'b100000100000...
+Compiling module mylib.Nbit_reg(n=2,r=2'b10)
+Compiling module mylib.lc4_decoder
+Compiling module mylib.lc4_regfile_default
+Compiling module mylib.gp1
+Compiling module mylib.gpn_default
+Compiling module mylib.gp4
+Compiling module mylib.cla16_default
+Compiling module mylib.Nbit_reg(n=3)
+Compiling module mylib.Nbit_reg
+Compiling module mylib.cla_input_ci
+Compiling module mylib.cla_input_rs
+Compiling module mylib.cla_input_rt
+Compiling module mylib.lc4_divider_one_iter
+Compiling module mylib.lc4_divider_default
+Compiling module mylib.comparators
+Compiling module mylib.lc4_alu
+Compiling module mylib.lc4_processor
+Compiling module mylib.test_processor
+ERROR: [XSIM 43-3410] Failed to compile one of the generated C files.
+Please recompile with "-mt off -v 1" switch to identify which design unit failed.

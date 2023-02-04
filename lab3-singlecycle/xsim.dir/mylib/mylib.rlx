@@ -1,0 +1,19 @@
+0.6
+2017.4
+Dec 15 2017
+20:57:24
+/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/.set_testcase.v,1615946451,verilog,,/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/lc4_alu.v,,,,mylib,,,,,,
+/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/include/bram.v,1613798217,verilog,,/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/testbench_lc4_processor.v,/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/.set_testcase.v,bram,,mylib,,,,,,
+/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/include/clock_util.v,1613798217,verilog,,/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/include/delay_eight_cycles.v,,count;lc4_we_gen,,mylib,,,,,,
+/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/include/delay_eight_cycles.v,1613798217,verilog,,/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/include/bram.v,,delay_eight_cycles,,mylib,,,,,,
+/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/include/lc4_memory.v,1613798217,verilog,,/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/include/clock_util.v,,lc4_memory,,mylib,,,,,,
+/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/include/lc4_prettyprint_errors.v,1613798217,verilog,,,,,,,,,,,,
+/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/include/register.v,1613798217,verilog,,/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/include/lc4_memory.v,,Nbit_reg,,mylib,,,,,,
+/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/lc4_alu.v,1614734210,verilog,,/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/lc4_cla.v,,cla_input_ci;cla_input_rs;cla_input_rt;comparators;lc4_alu,,mylib,,,,,,
+/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/lc4_cla.v,1614734247,verilog,,/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/lc4_decoder.v,,cla16;gp1;gp4;gpn,,mylib,,,,,,
+/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/lc4_decoder.v,1613798217,verilog,,/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/lc4_divider.v,,lc4_decoder,,mylib,,,,,,
+/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/lc4_divider.v,1614734125,verilog,,/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/lc4_regfile.v,,lc4_divider;lc4_divider_one_iter,,mylib,,,,,,
+/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/lc4_regfile.v,1614734196,verilog,,/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/lc4_single.v,,lc4_regfile,,mylib,,,,,,
+/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/lc4_single.v,1615946364,verilog,,/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/include/register.v,,lc4_processor,,mylib,,,,,,
+/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/print_points.v,1613798217,verilog,,,,,,,,,,,,
+/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/testbench_lc4_processor.v,1613798217,verilog,,,/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/.set_testcase.v;/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/print_points.v;/mnt/castor/seas_home/w/wespenn/cis571_class/cis571/lab3-singlecycle/include/lc4_prettyprint_errors.v,test_processor,,mylib,,,,,,

@@ -1,0 +1,8 @@
+0.6
+2017.4
+Dec 15 2017
+20:57:24
+/mnt/castor/seas_home/j/jgkogan/cis571/lab5-regfile/lc4_regfile_ss.v,1618888840,verilog,,/mnt/castor/seas_home/j/jgkogan/cis571/lab5-regfile/register.v,,lc4_regfile_ss,,mylib,,,,,,
+/mnt/castor/seas_home/j/jgkogan/cis571/lab5-regfile/print_points.v,1618083650,verilog,,,,,,,,,,,,
+/mnt/castor/seas_home/j/jgkogan/cis571/lab5-regfile/register.v,1618083650,verilog,,/mnt/castor/seas_home/j/jgkogan/cis571/lab5-regfile/testbench_lc4_regfile_ss.v,,Nbit_reg,,mylib,,,,,,
+/mnt/castor/seas_home/j/jgkogan/cis571/lab5-regfile/testbench_lc4_regfile_ss.v,1618083650,verilog,,,/mnt/castor/seas_home/j/jgkogan/cis571/lab5-regfile/print_points.v,test_regfile,,mylib,,,,,,

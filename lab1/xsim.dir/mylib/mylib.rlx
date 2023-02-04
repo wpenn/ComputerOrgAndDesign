@@ -1,0 +1,7 @@
+0.6
+2017.4
+Dec 15 2017
+20:57:24
+/mnt/castor/seas_home/j/jgkogan/cis571/lab1/print_points.v,1612329651,verilog,,,,,,,,,,,,
+/mnt/castor/seas_home/j/jgkogan/cis571/lab1/rca.v,1612332528,verilog,,/mnt/castor/seas_home/j/jgkogan/cis571/lab1/rca_testbench.v,,fulladder;fulladder2;halfadder;rca4,,mylib,,,,,,
+/mnt/castor/seas_home/j/jgkogan/cis571/lab1/rca_testbench.v,1612329651,verilog,,,/mnt/castor/seas_home/j/jgkogan/cis571/lab1/print_points.v,test_adders,,mylib,,,,,,

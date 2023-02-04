@@ -1,0 +1,6 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/lib64/libpthread.so.0(+0x132d0) [0x7feb9ceea2d0]
+[0xe0e7b0]

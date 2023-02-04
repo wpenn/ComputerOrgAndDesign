@@ -1,0 +1,64 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Fri Feb 19 21:11:02 2021
+| Host         : big05 running 64-bit openSUSE Leap 15.2
+| Command      : report_design_analysis -file ./output/post_route_design_analysis_report.txt
+| Design       : lc4_system_alu
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------
+
+Report Design Analysis
+
+Table of Contents
+-----------------
+1. Setup Path Characteristics 1-1
+2. Logic Level Distribution
+
+1. Setup Path Characteristics 1-1
+---------------------------------
+
++---------------------------+-----------------------------------------+
+|      Characteristics      |                 Path #1                 |
++---------------------------+-----------------------------------------+
+| Requirement               |                                  10.000 |
+| Path Delay                |                                   5.721 |
+| Logic Delay               | 1.396(25%)                              |
+| Net Delay                 | 4.325(75%)                              |
+| Clock Skew                |                                  -0.026 |
+| Slack                     |                                   4.248 |
+| Clock Relationship        | Safely Timed                            |
+| Logic Levels              |                                       6 |
+| Routes                    |                                       6 |
+| Logical Path              | FDRE LUT6 LUT3 LUT5 LUT6 LUT6 LUT4 FDRE |
+| Start Point Clock         | oled_ctrl_clk                           |
+| End Point Clock           | oled_ctrl_clk                           |
+| DSP Block                 | None                                    |
+| BRAM                      | None                                    |
+| IO Crossings              |                                       0 |
+| Config Crossings          |                                       0 |
+| SLR Crossings             |                                       0 |
+| PBlocks                   |                                       0 |
+| High Fanout               |                                      59 |
+| Dont Touch                |                                       0 |
+| Mark Debug                |                                       0 |
+| Start Point Pin Primitive | FDRE/C                                  |
+| End Point Pin Primitive   | FDRE/D                                  |
+| Start Point Pin           | state_reg[1]/C                          |
+| End Point Pin             | update_page_count_reg[1]/D              |
++---------------------------+-----------------------------------------+
+* Bounding box calculated as % of dimensions for the target device (308, 299)
+
+
+2. Logic Level Distribution
+---------------------------
+
++-----------------+-------------+----+-----+----+----+----+----+---+
+| End Point Clock | Requirement |  0 |  1  |  2 |  3 |  4 |  5 | 6 |
++-----------------+-------------+----+-----+----+----+----+----+---+
+| oled_ctrl_clk   | 10.000ns    | 80 | 110 | 97 | 60 | 54 | 13 | 3 |
++-----------------+-------------+----+-----+----+----+----+----+---+
+* Columns represents the logic levels per end point clock
+** Distribution is for top worst 417 paths
+
+

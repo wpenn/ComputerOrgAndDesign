@@ -1,0 +1,16 @@
+#
+# An unexpected error has occurred (6)
+#
+Stack:
+/lib64/libc.so.6(+0x394a0) [0x7f51ed2ff4a0]
+/lib64/libc.so.6(gsignal+0x110) [0x7f51ed2ff420]
+/lib64/libc.so.6(abort+0x151) [0x7f51ed300a01]
+/home1/c/cis371/software/Vivado/2017.4/lib/lnx64.o/SuSE/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x15d) [0x7f51edb4633d]
+/home1/c/cis371/software/Vivado/2017.4/lib/lnx64.o/SuSE/libstdc++.so.6(+0x8e316) [0x7f51edb44316]
+/home1/c/cis371/software/Vivado/2017.4/lib/lnx64.o/SuSE/libstdc++.so.6(+0x8e361) [0x7f51edb44361]
+/home1/c/cis371/software/Vivado/2017.4/lib/lnx64.o/SuSE/libstdc++.so.6(+0x8e578) [0x7f51edb44578]
+/home1/c/cis371/software/Vivado/2017.4/lib/lnx64.o/librdi_common.so(+0x32b476) [0x7f51ee36c476]
+/home1/c/cis371/software/Vivado/2017.4/lib/lnx64.o/librdi_common.so(+0x773cd5) [0x7f51ee7b4cd5]
+/home1/c/cis371/software/Vivado/2017.4/lib/lnx64.o/libboost_thread.so(+0xfa0d) [0x7f51ebc86a0d]
+/lib64/libpthread.so.0(+0x84f9) [0x7f51ed6894f9]
+/lib64/libc.so.6(clone+0x3f) [0x7f51ed3c1ecf]
